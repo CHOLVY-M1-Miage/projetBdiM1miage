@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_O2-a7IwiEe2NXNxHwVnABQ" id="_O29z0IwiEe2NXNxHwVnABQ" label="CIS_COMPO_bdpm_txt" purpose="fichier data brut" description="Il contient la composition qualitative et quantitative en substances actives et fractions&#xD;&#xA;thérapeutiques (telle que figurant dans le Résumé des Caractéristiques du Produit) des&#xD;&#xA;médicaments de la BDPM." version="0.1" statusCode="" item="_O2_B8IwiEe2NXNxHwVnABQ" displayName="CIS_COMPO_bdpm.txt">
+    <author href="../../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_O3GWsIwiEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_O3GWsYwiEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_O3G9wIwiEe2NXNxHwVnABQ" key="created_date" value="2023-01-04T12:23:37.243+0100"/>
+    <additionalProperties xmi:id="_O3G9wYwiEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_O3G9wowiEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_O3G9w4wiEe2NXNxHwVnABQ" key="modified_date" value="2023-01-09T10:25:04.583+0100"/>
+    <additionalProperties xmi:id="_DgbfcI_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DgbfcY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_Dgbfco_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_O2-a7YwiEe2NXNxHwVnABQ" path=""/>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_O2_B8IwiEe2NXNxHwVnABQ" property="_O2-a7IwiEe2NXNxHwVnABQ" state="_O2-a7YwiEe2NXNxHwVnABQ">
+    <connection href="CIS_COMPO_bdpm_txt_0.1.item#_O2-a4IwiEe2NXNxHwVnABQ"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>

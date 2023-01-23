@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_8HfJ0IwJEe2NXNxHwVnABQ" id="_8HeiwIwJEe2NXNxHwVnABQ" label="CIS_COMPO_bdpm" purpose="Dump les informations de CIS_COMPO_bdpm dans la base grosMed" description="Il contient la composition qualitative et quantitative en substances actives et fractions thérapeutiques (telle que figurant dans le Résumé des Caractéristiques du Produit) des médicaments de la BDPM." version="0.1" statusCode="" item="_8HfJ0owJEe2NXNxHwVnABQ" displayName="CIS_COMPO_bdpm">
+    <author href="../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_8Ho60IwJEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_8Ho60YwJEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_8Ho60owJEe2NXNxHwVnABQ" key="created_date" value="2023-01-04T09:29:43.549+0100"/>
+    <additionalProperties xmi:id="_8Ho604wJEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_8Ho61IwJEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_8Ho61YwJEe2NXNxHwVnABQ" key="modified_date" value="2023-01-04T09:30:52.239+0100"/>
+    <additionalProperties xmi:id="_DjW3oI_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DjW3oY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_DjW3oo_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_8HfJ0YwJEe2NXNxHwVnABQ" path="" deleted="true"/>
+  <TalendProperties:ProcessItem xmi:id="_8HfJ0owJEe2NXNxHwVnABQ" property="_8HfJ0IwJEe2NXNxHwVnABQ" state="_8HfJ0YwJEe2NXNxHwVnABQ">
+    <process href="CIS_COMPO_bdpm_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

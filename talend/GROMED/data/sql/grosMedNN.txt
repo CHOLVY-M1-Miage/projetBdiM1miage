@@ -1,0 +1,112 @@
+DROP TABLE IF EXISTS cis_has_asmr;
+DROP TABLE IF EXISTS cis_has_smr;
+DROP TABLE IF EXISTS cis_gener_bdpm;
+DROP TABLE IF EXISTS cis_info_importantes;
+DROP TABLE IF EXISTS cis_compo_bdpm;
+DROP TABLE IF EXISTS cis_cip_bdpm;
+DROP TABLE IF EXISTS cis_cpd_bdpm;
+DROP TABLE IF EXISTS has_liens_page_ctb_dpm;
+
+CREATE TABLE cis_bdpm(
+   codeCIS INT NOT NULL,
+   denominationMedicament VARCHAR(255),
+   formePharmaceutique VARCHAR(255),
+   voiesAdministration VARCHAR(255),
+   statutAdministratifAMM VARCHAR(255),
+   typeProcedureAMM VARCHAR(255),
+   etatCommercialisation VARCHAR(255),
+   dateAMM DATE,
+   estDisponible BOOL,
+   numeroEuropeen VARCHAR(255),
+   titulaires VARCHAR(255),
+   estEnSurveillanceRenforcee BOOL,
+   PRIMARY KEY(codeCIS)
+);
+
+CREATE TABLE has_liens_page_ctb_dpm(
+   codeHAS VARCHAR(255) NOT NULL,
+   lienPageCT VARCHAR(255),
+   PRIMARY KEY(codeHAS)
+);
+
+CREATE TABLE cis_cpd_Bdpm(
+   id INT AUTO_INCREMENT,
+   codeCIS INT NOT NULL,
+   conditionPrescription VARCHAR(255),
+   PRIMARY KEY(id),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_cip_bdpm(
+   id INT AUTO_INCREMENT,
+   codeCIS INT NOT NULL,
+   codeCIP7 SMALLINT,
+   libellePresentation VARCHAR(255),
+   statutAdministratifPresentation VARCHAR(255),
+   etatCommercialisation VARCHAR(255),
+   dateDeclarationCommercialisation DATE,
+   codeCIP13 SMALLINT,
+   agrementCollectivites VARCHAR(255),
+   tauxRemboursement SMALLINT,
+   prix VARCHAR(255),
+   droitRemboursement VARCHAR(10000),
+   PRIMARY KEY(id),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_compo_bdpm(
+   id INT AUTO_INCREMENT,
+   codeCIS INT NOT NULL,
+   designationPharmaceutique VARCHAR(255),
+   codeSubstance SMALLINT,
+   denominationSubstance VARCHAR(255),
+   dosageSubstance VARCHAR(255),
+   refDosage VARCHAR(255),
+   estActif BOOL,
+   numCompo SMALLINT,
+   PRIMARY KEY(id),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_info_importantes(
+   codeCIS INT NOT NULL,
+   dateDebutInfoSecurite DATE,
+   dateFinInfoSecurite DATE,
+   infoSecurite VARCHAR(10000),
+   PRIMARY KEY(codeCIS),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_gener_bdpm(
+   idGenerique SMALLINT,
+   libelleGenerique VARCHAR(10000),
+   codeCIS INT,
+   typeGenerique SMALLINT,
+   groupeGenerique SMALLINT,
+   PRIMARY KEY(codeCIS),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_has_smr(
+   codeCIS INT NOT NULL,
+   codeHAS VARCHAR(255) NOT NULL,
+   motifEvaluation VARCHAR(255),
+   dateAvisTransparence DATE,
+   valeurSMR VARCHAR(255),
+   libelleSMR VARCHAR(255),
+   PRIMARY KEY(codeCIS, codeHAS),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS),
+   FOREIGN KEY(codeHAS) REFERENCES has_liens_page_ctb_dpm(codeHAS)
+);
+
+CREATE TABLE cis_has_asmr(
+   codeCIS INT NOT NULL,
+   codeHAS VARCHAR(255) NOT NULL,
+   motifEvaluation VARCHAR(255),
+   dateAvisTransparence DATE,
+   valeurASMR VARCHAR(255),
+   libelleASMR VARCHAR(255),
+   PRIMARY KEY(codeCIS, codeHAS),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS),
+   FOREIGN KEY(codeHAS) REFERENCES has_liens_page_ctb_dpm(codeHAS)
+);

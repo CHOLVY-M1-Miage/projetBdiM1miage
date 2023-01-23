@@ -1,0 +1,26 @@
+{
+  "itemId" : "_wXLRgIzaEe2NXNxHwVnABQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_Y3HwMI_-Ee2NK6clOFdtSQ",
+    "parameterList" : [ {
+      "id" : "_Y3YO4I_-Ee2NK6clOFdtSQ",
+      "name" : "gros_med_brut1_Login"
+    }, {
+      "id" : "_Y3YO4Y_-Ee2NK6clOFdtSQ",
+      "name" : "gros_med_brut1_Port"
+    }, {
+      "id" : "_Y3YO4o_-Ee2NK6clOFdtSQ",
+      "name" : "gros_med_brut1_AdditionalParams"
+    }, {
+      "id" : "_Y3YO44_-Ee2NK6clOFdtSQ",
+      "name" : "gros_med_brut1_Database"
+    }, {
+      "id" : "_Y3YO5I_-Ee2NK6clOFdtSQ",
+      "name" : "gros_med_brut1_Server"
+    }, {
+      "id" : "_Y3YO5Y_-Ee2NK6clOFdtSQ",
+      "name" : "gros_med_brut1_Password"
+    } ]
+  } ]
+}

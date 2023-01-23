@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_WC6mgIwJEe2NXNxHwVnABQ" id="_WC4xUIwJEe2NXNxHwVnABQ" label="CIS_CIP_bdpm" purpose="Dump les informations de CIS_CIP_bdpm dans la base grosMed" description="Il contient la liste des présentations (boîtes de médicaments) disponibles pour les&#xD;&#xA;médicaments présents dans le fichier décrit dans le paragraphe 3.1." version="0.1" statusCode="" item="_WC6mgowJEe2NXNxHwVnABQ" displayName="CIS_CIP_bdpm">
+    <author href="../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_WDDJYIwJEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_WDDJYYwJEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_WDDJYowJEe2NXNxHwVnABQ" key="created_date" value="2023-01-04T09:25:28.054+0100"/>
+    <additionalProperties xmi:id="_WDDJY4wJEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_WDDJZIwJEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_WDDJZYwJEe2NXNxHwVnABQ" key="modified_date" value="2023-01-04T09:30:47.016+0100"/>
+    <additionalProperties xmi:id="_DjEjwI_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DjEjwY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_DjEjwo_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_WC6mgYwJEe2NXNxHwVnABQ" path="" deleted="true"/>
+  <TalendProperties:ProcessItem xmi:id="_WC6mgowJEe2NXNxHwVnABQ" property="_WC6mgIwJEe2NXNxHwVnABQ" state="_WC6mgYwJEe2NXNxHwVnABQ">
+    <process href="CIS_CIP_bdpm_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

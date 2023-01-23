@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_-WJDoIwSEe2NXNxHwVnABQ" confirmationNeeded="false" name="DSIM">
+  <contextParameter xmi:id="_-WJDoYwSEe2NXNxHwVnABQ" comment="" name="source" prompt="source?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/workspace/GROMED/data/fichiers/"/>
+</talendfile:ContextType>

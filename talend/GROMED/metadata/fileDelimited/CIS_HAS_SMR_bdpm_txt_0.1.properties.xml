@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_hoanCYwqEe2NXNxHwVnABQ" id="_hoZ_8IwqEe2NXNxHwVnABQ" label="CIS_HAS_SMR_bdpm_txt" purpose="fichier data brut" description="Il contient l’ensemble des avis de SMR de la HAS postérieurs à l’année 2002." version="0.1" statusCode="" item="_hoanC4wqEe2NXNxHwVnABQ" displayName="CIS_HAS_SMR_bdpm.txt">
+    <author href="../../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_hogtoIwqEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_hogtoYwqEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_hogtoowqEe2NXNxHwVnABQ" key="created_date" value="2023-01-04T13:22:59.193+0100"/>
+    <additionalProperties xmi:id="_hogto4wqEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_hogtpIwqEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_hogtpYwqEe2NXNxHwVnABQ" key="modified_date" value="2023-01-09T10:26:00.221+0100"/>
+    <additionalProperties xmi:id="_Dg0hAI_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Dg0hAY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_Dg1IEI_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_hoanCowqEe2NXNxHwVnABQ" path=""/>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_hoanC4wqEe2NXNxHwVnABQ" property="_hoanCYwqEe2NXNxHwVnABQ" state="_hoanCowqEe2NXNxHwVnABQ">
+    <connection href="CIS_HAS_SMR_bdpm_txt_0.1.item#_hoanAIwqEe2NXNxHwVnABQ"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>

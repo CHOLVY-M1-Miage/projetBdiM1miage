@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_NE3TEIzdEe2NXNxHwVnABQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_NE3TEYzdEe2NXNxHwVnABQ" comment="" name="gros_med_brut_Port" prompt="gros_med_brut_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_NE3TEozdEe2NXNxHwVnABQ" comment="" name="gros_med_brut_Login" prompt="gros_med_brut_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root"/>
+  <contextParameter xmi:id="_NE3TE4zdEe2NXNxHwVnABQ" comment="" name="gros_med_brut_Server" prompt="gros_med_brut_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_NE3TFIzdEe2NXNxHwVnABQ" comment="" name="gros_med_brut_Database" prompt="gros_med_brut_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="gros_med_brut"/>
+  <contextParameter xmi:id="_NE3TFYzdEe2NXNxHwVnABQ" comment="" name="gros_med_brut_Password" prompt="gros_med_brut_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:9X3iIBkbdR9KQYja+5RnORVMOoZArqXSHRnXVW1LsRM9mun2TtZqu7QynH1lcz6u"/>
+  <contextParameter xmi:id="_NE3TFozdEe2NXNxHwVnABQ" comment="" name="gros_med_brut_AdditionalParams" prompt="gros_med_brut_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true"/>
+</talendfile:ContextType>

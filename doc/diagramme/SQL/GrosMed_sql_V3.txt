@@ -1,0 +1,152 @@
+Sub Create_Tables()
+
+DoCmd.RunSQL "CREATE TABLE Générique(" & _
+   "idGenerique INT," & _
+   "libelleGenerique VARCHAR(50)," & _
+   "typeGenerique INT," & _
+   "groupeGenerique INT," & _
+   "PRIMARY KEY(idGenerique)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE Medicament(" & _
+   "codeCIS INT," & _
+   "denominationMedicament VARCHAR(255)," & _
+   "formePharmaceutique VARCHAR(255)," & _
+   "voiesAdministration VARCHAR(255)," & _
+   "statutAdministratifAMM VARCHAR(255)," & _
+   "typeProcedureAMM VARCHAR(255)," & _
+   "estCommercialisé LOGICAL," & _
+   "dateAMM DATE," & _
+   "statutBdm VARCHAR(255)," & _
+   "numeroEuropeen VARCHAR(255)," & _
+   "titulaires VARCHAR(255)," & _
+   "estEnSurveillanceRenforcee LOGICAL," & _
+   "PRIMARY KEY(codeCIS)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE PageCT(" & _
+   "codeHAS SMALLINT," & _
+   "lienPageCT VARCHAR(50)," & _
+   "PRIMARY KEY(codeHAS)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE Utilisateur(" & _
+   "id INT," & _
+   "nom VARCHAR(255)," & _
+   "PRIMARY KEY(id)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE Commande(" & _
+   "dateCommande DATETIME," & _
+   "estPanier LOGICAL," & _
+   "estConfirmé LOGICAL," & _
+   "estTerminé VARCHAR(50)," & _
+   "id INT NOT NULL," & _
+   "PRIMARY KEY(dateCommande)," & _
+   "FOREIGN KEY(id) REFERENCES Utilisateur(id)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE Etablissement(" & _
+   "idEtab INT," & _
+   "nom VARCHAR(2553)," & _
+   "adresse VARCHAR(255)," & _
+   "typeEtab VARCHAR(255)," & _
+   "PRIMARY KEY(idEtab)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE Livraison(" & _
+   "id INT," & _
+   "dateLivraison DATETIME," & _
+   "dateCommande DATETIME NOT NULL," & _
+   "PRIMARY KEY(id)," & _
+   "FOREIGN KEY(dateCommande) REFERENCES Commande(dateCommande)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE Prescription(" & _
+   "id INT," & _
+   "conditionPD VARCHAR(50)," & _
+   "codeCIS INT NOT NULL," & _
+   "PRIMARY KEY(id)," & _
+   "FOREIGN KEY(codeCIS) REFERENCES Medicament(codeCIS)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE BoiteMedicament(" & _
+   "id INT," & _
+   "codeCIP7 INT," & _
+   "libellePresentation VARCHAR(255)," & _
+   "statutAdministratifPresentation VARCHAR(255)," & _
+   "etatCommercialisation VARCHAR(255)," & _
+   "dateDeclarationCommercialisation DATE," & _
+   "codeCIP13 INT," & _
+   "agrementCollectivites VARCHAR(255)," & _
+   "tauxRemboursement VARCHAR(255)," & _
+   "prix DECIMAL(15,2)," & _
+   "droitRemboursement VARCHAR(255)," & _
+   "codeCIS INT NOT NULL," & _
+   "PRIMARY KEY(id)," & _
+   "FOREIGN KEY(codeCIS) REFERENCES Medicament(codeCIS)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE CompositionMedicament(" & _
+   "id INT," & _
+   "designationPharmaceutique VARCHAR(255)," & _
+   "codeSubstance INT," & _
+   "denominationSubstance VARCHAR(255)," & _
+   "dosageSubstance VARCHAR(255)," & _
+   "refDosage VARCHAR(255)," & _
+   "estActif LOGICAL," & _
+   "numSAST INT," & _
+   "codeCIS_medicament INT NOT NULL," & _
+   "PRIMARY KEY(id)," & _
+   "FOREIGN KEY(codeCIS_medicament) REFERENCES Medicament(codeCIS)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE InformationSecu(" & _
+   "id INT," & _
+   "dateDebutInfoSecurite DATE," & _
+   "dateFinInfoSecurite VARCHAR(50)," & _
+   "information VARCHAR(50)," & _
+   "codeCIS INT NOT NULL," & _
+   "PRIMARY KEY(id)," & _
+   "UNIQUE(codeCIS)," & _
+   "FOREIGN KEY(codeCIS) REFERENCES Medicament(codeCIS)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE ligneCommande(" & _
+   "id INT," & _
+   "dateCommande DATETIME," & _
+   "Quantité INT," & _
+   "PRIMARY KEY(id, dateCommande)," & _
+   "FOREIGN KEY(id) REFERENCES BoiteMedicament(id)," & _
+   "FOREIGN KEY(dateCommande) REFERENCES Commande(dateCommande)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE estRattaché(" & _
+   "id_utilisateur INT," & _
+   "idEtab_Etablissement INT," & _
+   "PRIMARY KEY(id_utilisateur, idEtab_Etablissement)," & _
+   "FOREIGN KEY(id_utilisateur) REFERENCES Utilisateur(id)," & _
+   "FOREIGN KEY(idEtab_Etablissement) REFERENCES Etablissement(idEtab)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE estExpliqué(" & _
+   "codeCIS_médicament INT," & _
+   "codeHAS_page SMALLINT," & _
+   "motifEvaluation VARCHAR(255)," & _
+   "dateCT VARCHAR(255)," & _
+   "valeurSMR VARCHAR(255)," & _
+   "libelleSMR VARCHAR(255)," & _
+   "PRIMARY KEY(codeCIS_médicament, codeHAS_page)," & _
+   "FOREIGN KEY(codeCIS_médicament) REFERENCES Medicament(codeCIS)," & _
+   "FOREIGN KEY(codeHAS_page) REFERENCES PageCT(codeHAS)" & _
+");"   
+
+DoCmd.RunSQL "CREATE TABLE seRapporte(" & _
+   "idGenerique_Générique INT," & _
+   "codeCIS_médicament INT," & _
+   "PRIMARY KEY(idGenerique_Générique, codeCIS_médicament)," & _
+   "FOREIGN KEY(idGenerique_Générique) REFERENCES Générique(idGenerique)," & _
+   "FOREIGN KEY(codeCIS_médicament) REFERENCES Medicament(codeCIS)" & _
+");"   
+
+End Sub

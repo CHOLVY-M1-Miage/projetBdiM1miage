@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_tWZuwIxDEe2NXNxHwVnABQ" id="_tWIpAIxDEe2NXNxHwVnABQ" label="GrosMed" purpose="se connecter a la base gromed" description="Base des medicaments" version="0.1" statusCode="" item="_tWZuwoxDEe2NXNxHwVnABQ" displayName="GrosMed">
+    <author href="../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_tWeAMIxDEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_tWeAMYxDEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_tWeAMoxDEe2NXNxHwVnABQ" key="created_date" value="2023-01-04T16:23:15.251+0100"/>
+    <additionalProperties xmi:id="_tWeAM4xDEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_tWeANIxDEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_tWeANYxDEe2NXNxHwVnABQ" key="modified_date" value="2023-01-09T10:21:33.338+0100"/>
+    <additionalProperties xmi:id="_DilbkI_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DilbkY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_Dilbko_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_tWZuwYxDEe2NXNxHwVnABQ" path="" deleted="true"/>
+  <TalendProperties:ContextItem xmi:id="_tWZuwoxDEe2NXNxHwVnABQ" property="_tWZuwIxDEe2NXNxHwVnABQ" state="_tWZuwYxDEe2NXNxHwVnABQ" defaultContext="Default">
+    <context href="GrosMed_0.1.item#_tWZHsIxDEe2NXNxHwVnABQ"/>
+  </TalendProperties:ContextItem>
+</xmi:XMI>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_kkDIMIweEe2NXNxHwVnABQ" id="_kkChEIweEe2NXNxHwVnABQ" label="CIS_CIP_bdpm_txt" purpose="fichier data brut" description="Il contient la liste des présentations (boîtes de médicaments) disponibles pour les&#xD;&#xA;médicaments présents dans le fichier décrit dans le paragraphe 3.1." version="0.1" statusCode="" item="_kkDIMoweEe2NXNxHwVnABQ" displayName="CIS_CIP_bdpm.txt">
+    <author href="../../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_kkLD8IweEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_kkLD8YweEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_kkLD8oweEe2NXNxHwVnABQ" key="created_date" value="2023-01-04T11:57:24.911+0100"/>
+    <additionalProperties xmi:id="_kkLD84weEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_kkLD9IweEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_kkLD9YweEe2NXNxHwVnABQ" key="modified_date" value="2023-01-09T10:24:50.518+0100"/>
+    <additionalProperties xmi:id="_DgOEEI_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DgOEEY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_DgOEEo_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_kkDIMYweEe2NXNxHwVnABQ" path=""/>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_kkDIMoweEe2NXNxHwVnABQ" property="_kkDIMIweEe2NXNxHwVnABQ" state="_kkDIMYweEe2NXNxHwVnABQ">
+    <connection href="CIS_CIP_bdpm_txt_0.1.item#_kkDIIIweEe2NXNxHwVnABQ"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>

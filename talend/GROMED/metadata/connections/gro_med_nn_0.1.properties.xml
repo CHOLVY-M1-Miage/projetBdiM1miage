@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_MtCsYoxCEe2NXNxHwVnABQ" id="_Ac68EI2WEe2TCoQNv3PJKA" label="gro_med_nn" purpose="Se connecter à la base gros_med_nn" description="Base de donnèes non normée du projet bdi 2023" version="0.1" statusCode="" item="_MtCsZIxCEe2NXNxHwVnABQ" displayName="gro_med_nn">
+    <author href="../../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_MtHk4IxCEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_MtHk4YxCEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_MtIL8IxCEe2NXNxHwVnABQ" key="created_date" value="2023-01-06T08:44:53.353+0100"/>
+    <additionalProperties xmi:id="_MtIL8YxCEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_MtIL8oxCEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_MtIL84xCEe2NXNxHwVnABQ" key="modified_date" value="2023-01-11T13:24:21.757+0100"/>
+    <additionalProperties xmi:id="_Dfo1QI_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Dfo1QY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_Dfo1Qo_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_AdCQ0I2WEe2TCoQNv3PJKA" path=""/>
+  <TalendProperties:DatabaseConnectionItem xmi:id="_MtCsZIxCEe2NXNxHwVnABQ" property="_MtCsYoxCEe2NXNxHwVnABQ" state="_AdCQ0I2WEe2TCoQNv3PJKA" typeName="MySQL">
+    <connection href="gro_med_nn_0.1.item#_Ad-E8I2WEe2TCoQNv3PJKA"/>
+  </TalendProperties:DatabaseConnectionItem>
+</xmi:XMI>

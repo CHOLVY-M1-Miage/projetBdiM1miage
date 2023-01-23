@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_MtCsYoxCEe2NXNxHwVnABQ" id="_JtEwwIxBEe2NXNxHwVnABQ" label="gro_med_n" purpose="Se connecter à la bse gro_med" description="Base de donnèes normée du projet bdi 2023" version="0.1" statusCode="" item="_MtCsZIxCEe2NXNxHwVnABQ" displayName="gro_med_n">
+    <author href="../../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_MtHk4IxCEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_MtHk4YxCEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_MtIL8IxCEe2NXNxHwVnABQ" key="created_date" value="2023-01-04T16:12:26.670+0100"/>
+    <additionalProperties xmi:id="_MtIL8YxCEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_MtIL8oxCEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_MtIL84xCEe2NXNxHwVnABQ" key="modified_date" value="2023-01-09T10:21:08.807+0100"/>
+    <additionalProperties xmi:id="_DeXC4I_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DeXC4Y_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_DeXC4o_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_MtCsY4xCEe2NXNxHwVnABQ" path=""/>
+  <TalendProperties:DatabaseConnectionItem xmi:id="_MtCsZIxCEe2NXNxHwVnABQ" property="_MtCsYoxCEe2NXNxHwVnABQ" state="_MtCsY4xCEe2NXNxHwVnABQ" typeName="MySQL">
+    <connection href="gro_med_n_0.1.item#_MtAQIIxCEe2NXNxHwVnABQ"/>
+  </TalendProperties:DatabaseConnectionItem>
+</xmi:XMI>

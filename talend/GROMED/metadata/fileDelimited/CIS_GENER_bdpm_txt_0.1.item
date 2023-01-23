@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_b7HQgIwrEe2NXNxHwVnABQ" name="CIS_GENER_bdpm.txt" id="_b7GpcIwrEe2NXNxHwVnABQ" dataPackage="_b7HQgYwrEe2NXNxHwVnABQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/Ethan/Documents/workspace/GROMED/data/fichiers/CIS_GENER_bdpm.txt" Format="WINDOWS" Encoding="ISO-8859-15" FieldSeparatorValue="&quot;\t&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Tabulation"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_b7HQgYwrEe2NXNxHwVnABQ" name="default" dataManager="_b7HQgIwrEe2NXNxHwVnABQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_b7HQgowrEe2NXNxHwVnABQ" id="_iDag8IwqEe2NXNxHwVnABQ" label="CIS_GENER_bdpm">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b7HQhIwrEe2NXNxHwVnABQ" label="id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b7HQhYwrEe2NXNxHwVnABQ" label="libelle" length="141" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b7HQg4wrEe2NXNxHwVnABQ" label="CodeCISc" length="8" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b7HQhowrEe2NXNxHwVnABQ" label="type" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b7HQh4wrEe2NXNxHwVnABQ" label="num" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b7HQiIwrEe2NXNxHwVnABQ" label="Column5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

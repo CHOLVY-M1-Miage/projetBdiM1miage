@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_7U3o0IwDEe2NXNxHwVnABQ" id="_7U1MkIwDEe2NXNxHwVnABQ" label="ParAccelDropTargetTable" version="0.1" item="_7U3o0owDEe2NXNxHwVnABQ">
+    <author href="../../../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_7U76QIwDEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_7U76QYwDEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_7U76QowDEe2NXNxHwVnABQ" key="created_date" value="2023-01-04T08:46:41.252+0100"/>
+    <additionalProperties xmi:id="_7U76Q4wDEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_7U76RIwDEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_7U76RYwDEe2NXNxHwVnABQ" key="modified_date" value="2023-01-04T08:46:41.252+0100"/>
+    <additionalProperties xmi:id="_Dq97gI_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Dq97gY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_Dq97go_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_7U3o0YwDEe2NXNxHwVnABQ" path="ParAccel/system"/>
+  <TalendProperties:SQLPatternItem xmi:id="_7U3o0owDEe2NXNxHwVnABQ" property="_7U3o0IwDEe2NXNxHwVnABQ" state="_7U3o0YwDEe2NXNxHwVnABQ" system="true" eltName="ParAccel">
+    <content href="ParAccelDropTargetTable_0.1.item#/"/>
+  </TalendProperties:SQLPatternItem>
+</xmi:XMI>

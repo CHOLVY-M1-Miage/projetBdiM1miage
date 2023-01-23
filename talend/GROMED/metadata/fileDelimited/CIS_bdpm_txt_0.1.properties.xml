@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_T2Z_wIwWEe2NXNxHwVnABQ" id="_T1_wEIwWEe2NXNxHwVnABQ" label="CIS_bdpm_txt" purpose="fichier data brut" description="Il contient la liste des médicaments commercialisés ou en arrêt de commercialisation depuis&#xD;&#xA;moins de trois ans." version="0.1" statusCode="" item="_T2Z_wowWEe2NXNxHwVnABQ" displayName="CIS_bdpm.txt">
+    <author href="../../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_T2hUgIwWEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_T2hUgYwWEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_T2hUgowWEe2NXNxHwVnABQ" key="created_date" value="2023-01-04T10:58:16.775+0100"/>
+    <additionalProperties xmi:id="_T2hUg4wWEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_T2hUhIwWEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_T2hUhYwWEe2NXNxHwVnABQ" key="modified_date" value="2023-01-09T10:24:31.244+0100"/>
+    <additionalProperties xmi:id="_DhAHMI_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DhAHMY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_DhAHMo_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_T2Z_wYwWEe2NXNxHwVnABQ" path=""/>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_T2Z_wowWEe2NXNxHwVnABQ" property="_T2Z_wIwWEe2NXNxHwVnABQ" state="_T2Z_wYwWEe2NXNxHwVnABQ">
+    <connection href="CIS_bdpm_txt_0.1.item#_T2SrAIwWEe2NXNxHwVnABQ"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>

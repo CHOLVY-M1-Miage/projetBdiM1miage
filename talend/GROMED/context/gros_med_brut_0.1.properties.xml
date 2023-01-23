@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_NE3TF4zdEe2NXNxHwVnABQ" id="_NElmQIzdEe2NXNxHwVnABQ" label="gros_med_brut" purpose="Etabli la connextion à la base de donnèe gros_med_brut" version="0.1" statusCode="" item="_NE3TGYzdEe2NXNxHwVnABQ" displayName="gros_med_brut">
+    <author href="../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_NE6WYIzdEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_NE6WYYzdEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_NE69cIzdEe2NXNxHwVnABQ" key="created_date" value="2023-01-05T10:42:01.158+0100"/>
+    <additionalProperties xmi:id="_NE69cYzdEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_NE69cozdEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_NE69c4zdEe2NXNxHwVnABQ" key="modified_date" value="2023-01-09T10:21:31.236+0100"/>
+    <additionalProperties xmi:id="_Dixo0I_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Dixo0Y_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_Dixo0o_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_NE3TGIzdEe2NXNxHwVnABQ" path="" deleted="true"/>
+  <TalendProperties:ContextItem xmi:id="_NE3TGYzdEe2NXNxHwVnABQ" property="_NE3TF4zdEe2NXNxHwVnABQ" state="_NE3TGIzdEe2NXNxHwVnABQ" defaultContext="Default">
+    <context href="gros_med_brut_0.1.item#_NE3TEIzdEe2NXNxHwVnABQ"/>
+  </TalendProperties:ContextItem>
+</xmi:XMI>

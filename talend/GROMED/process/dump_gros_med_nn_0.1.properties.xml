@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_-YUZcIwIEe2NXNxHwVnABQ" id="_r6HHUI09Ee2TCoQNv3PJKA" label="dump_gros_med_nn" purpose="Dump les informations de CIS_XXX.txt dans la base grosMednn" description="Load chaque fichier CIS_XXX.txt, dans la table du même nom." version="0.1" statusCode="" item="_-YUZcowIEe2NXNxHwVnABQ" displayName="dump_gros_med_nn">
+    <author href="../talend.project#_5arNAYwDEe2NXNxHwVnABQ"/>
+    <additionalProperties xmi:id="_-YexgIwIEe2NXNxHwVnABQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_-YexgYwIEe2NXNxHwVnABQ" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_-YexgowIEe2NXNxHwVnABQ" key="created_date" value="2023-01-05T22:12:39.826+0100"/>
+    <additionalProperties xmi:id="_-Yexg4wIEe2NXNxHwVnABQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_-YexhIwIEe2NXNxHwVnABQ" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_-YexhYwIEe2NXNxHwVnABQ" key="modified_date" value="2023-01-11T13:29:12.281+0100"/>
+    <additionalProperties xmi:id="_DkWWII_-Ee2NK6clOFdtSQ" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DkWWIY_-Ee2NK6clOFdtSQ" key="import_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_DkWWIo_-Ee2NK6clOFdtSQ" key="import_date" value="2023-01-09T10:14:43.557+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_r6jMMI09Ee2TCoQNv3PJKA" path=""/>
+  <TalendProperties:ProcessItem xmi:id="_-YUZcowIEe2NXNxHwVnABQ" property="_-YUZcIwIEe2NXNxHwVnABQ" state="_r6jMMI09Ee2TCoQNv3PJKA">
+    <process href="dump_gros_med_nn_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

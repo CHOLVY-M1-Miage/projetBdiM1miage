@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_MmVCYIwsEe2NXNxHwVnABQ" name="CIS_InfoImportantes_AAAAMMJJhhmiss_bdpm.txt" id="_MmUbUIwsEe2NXNxHwVnABQ" dataPackage="_MmVCYYwsEe2NXNxHwVnABQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/Ethan/Documents/workspace/GROMED/data/fichiers/CIS_InfoImportantes_20221019150103_bdpm.txt" Format="WINDOWS" Encoding="ISO-8859-15" FieldSeparatorValue="&quot;\t&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Tabulation"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_MmVCYYwsEe2NXNxHwVnABQ" name="default" dataManager="_MmVCYIwsEe2NXNxHwVnABQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_MmVCYowsEe2NXNxHwVnABQ" id="_6fcVgIwrEe2NXNxHwVnABQ" label="CIS_InfoImportantes_AAAAMMJJhhmiss_bdpm">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MmVCY4wsEe2NXNxHwVnABQ" label="codeCIS" length="8" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MmVCZIwsEe2NXNxHwVnABQ" label="dateDeb" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MmVCZYwsEe2NXNxHwVnABQ" label="dateFin" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MmVCZowsEe2NXNxHwVnABQ" label="texte" length="378" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

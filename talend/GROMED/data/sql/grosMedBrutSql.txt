@@ -1,0 +1,115 @@
+DROP TABLE IF EXISTS cis_has_asmr;
+DROP TABLE IF EXISTS cis_has_smr;
+DROP TABLE IF EXISTS cis_gener_bdpm;
+DROP TABLE IF EXISTS cis_info_importantes;
+DROP TABLE IF EXISTS cis_compo_bdpm;
+DROP TABLE IF EXISTS cis_cip_bdpm;
+DROP TABLE IF EXISTS cis_cpd_bdpm;
+DROP TABLE IF EXISTS has_liens_page_ctb_dpm;
+DROP TABLE IF EXISTS cis_bdpm;
+
+CREATE TABLE cis_bdpm(
+   codeCIS VARCHAR(255) NOT NULL,
+   denominationMedicament VARCHAR(255),
+   formePharmaceutique VARCHAR(255),
+   voiesAdministration VARCHAR(255),
+   statutAdministratifAMM VARCHAR(255),
+   typeProcedureAMM VARCHAR(255),
+   etatCommercialisation VARCHAR(255),
+   dateAMM VARCHAR(255),
+   estDisponible VARCHAR(255),
+   numeroEuropeen VARCHAR(255),
+   titulaires VARCHAR(255),
+   estEnSurveillanceRenforcee VARCHAR(255),
+   PRIMARY KEY(codeCIS)
+);
+
+CREATE TABLE has_liens_page_ctb_dpm(
+   codeHAS VARCHAR(255) NOT NULL,
+   lienPageCT VARCHAR(255),
+   PRIMARY KEY(codeHAS)
+);
+
+CREATE TABLE cis_cpd_Bdpm(
+   id INT AUTO_INCREMENT,
+   codeCIS VARCHAR(255) NOT NULL,
+   conditionPrescription VARCHAR(255),
+   PRIMARY KEY(id),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_cip_bdpm(
+   id INT AUTO_INCREMENT,
+   codeCIS VARCHAR(255) NOT NULL,
+   codeCIP7 VARCHAR(255),
+   libellePresentation VARCHAR(255),
+   statutAdministratifPresentation VARCHAR(255),
+   etatCommercialisation VARCHAR(255),
+   dateDeclarationCommercialisation VARCHAR(255),
+   codeCIP13 VARCHAR(255),
+   agrementCollectivites VARCHAR(255),
+   tauxRemboursement VARCHAR(255),
+   prix VARCHAR(255),
+   droitRemboursement VARCHAR(10000),
+   PRIMARY KEY(id),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_compo_bdpm(
+   id INT AUTO_INCREMENT,
+   codeCIS VARCHAR(255) NOT NULL,
+   designationPharmaceutique VARCHAR(255),
+   codeSubstance VARCHAR(255),
+   denominationSubstance VARCHAR(255),
+   dosageSubstance VARCHAR(255),
+   refDosage VARCHAR(255),
+   estActif VARCHAR(255),
+   numCompo VARCHAR(255),
+   PRIMARY KEY(id),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_info_importantes(
+   id INT AUTO_INCREMENT,
+   codeCIS VARCHAR(255) NOT NULL,
+   dateDebutInfoSecurite VARCHAR(255),
+   dateFinInfoSecurite VARCHAR(255),
+   infoSecurite VARCHAR(10000),
+   PRIMARY KEY(id),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_gener_bdpm(
+   id INT AUTO_INCREMENT,
+   idGenerique VARCHAR(255),
+   libelleGenerique VARCHAR(10000),
+   codeCIS VARCHAR(255) NOT NULL,
+   typeGenerique VARCHAR(255),
+   groupeGenerique VARCHAR(255),
+   PRIMARY KEY(id),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS)
+);
+
+CREATE TABLE cis_has_smr(
+   codeCIS VARCHAR(255) NOT NULL,
+   codeHAS VARCHAR(255) NOT NULL,
+   motifEvaluation VARCHAR(255),
+   dateAvisTransparence VARCHAR(255),
+   valeurSMR VARCHAR(255),
+   libelleSMR VARCHAR(255),
+   PRIMARY KEY(codeCIS, codeHAS),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS),
+   FOREIGN KEY(codeHAS) REFERENCES has_liens_page_ctb_dpm(codeHAS)
+);
+
+CREATE TABLE cis_has_asmr(
+   codeCIS VARCHAR(255) NOT NULL,
+   codeHAS VARCHAR(255) NOT NULL,
+   motifEvaluation VARCHAR(255),
+   dateAvisTransparence VARCHAR(255),
+   valeurASMR VARCHAR(255),
+   libelleASMR VARCHAR(255),
+   PRIMARY KEY(codeCIS, codeHAS),
+   FOREIGN KEY(codeCIS) REFERENCES cis_bdpm(codeCIS),
+   FOREIGN KEY(codeHAS) REFERENCES has_liens_page_ctb_dpm(codeHAS)
+);

@@ -7,12 +7,12 @@
     <persistence-unit name="JPA-HBM">
 
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@im2ag-oracle.e.ujf-grenoble.fr:1521:IM2AG"/>
-            <property name="javax.persistence.jdbc.user" value="bonninal"/>
-            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@im2ag-oracle.univ-grenoble-alpes.fr:1521:IM2AG"/>
+            <property name="javax.persistence.jdbc.user" value="cholvyj"/>
+            <property name="javax.persistence.jdbc.password" value="c93788da2f"/>
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
             <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle19cDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
 

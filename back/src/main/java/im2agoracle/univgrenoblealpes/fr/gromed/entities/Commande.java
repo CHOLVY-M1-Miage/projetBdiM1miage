@@ -15,25 +15,24 @@ import jakarta.persistence.OneToMany;
 public class Commande {
 
     @Id
-    @Column(name="")
+    @Column(name = "ID")
     private int id;
 
-    @Column(name="")
+    @Column(name = "DATEDECOMMANDE")
     private LocalDateTime dateCommande;
 
-    @Column(name="")
+    @Column(name = "ESTPANIER")
     private boolean estPanier;
 
-    @Column(name="")
+    @Column(name = "ESTCONFIRME")
     private boolean estConfirme;
 
-    @Column(name="")
+    @Column(name = "ESTTERMINE")
     private boolean estTermine;
 
-    @Column(name="")
+    @Column(name = "ESTCOMMANDETYPE")
     private boolean estCommandeType;
 
-    
     @OneToMany(mappedBy = "commande")
     private List<LigneCommande> lignesCommande;
 
@@ -41,14 +40,12 @@ public class Commande {
     @JoinColumn(name = "idEtab")
     private Etablissement etablissement;
 
-
     public Commande() {
         this.estPanier = true;
         this.estConfirme = false;
         this.estTermine = false;
         this.estCommandeType = false;
     }
-
 
     public int getId() {
         return this.id;
@@ -71,7 +68,7 @@ public class Commande {
     }
 
     public boolean getEstConfirme() {
-        return this.estConfirme ;
+        return this.estConfirme;
     }
 
     public void setEstConfirme(boolean newEstConfirme) {

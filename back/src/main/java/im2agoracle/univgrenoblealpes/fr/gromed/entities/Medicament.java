@@ -12,37 +12,37 @@ import jakarta.persistence.OneToMany;
 public class Medicament {
 
     @Id
-    @Column(name = "")
+    @Column(name = "CODECIS")
     private int codeCIS;
 
-    @Column(name = "")
+    @Column(name = "DENOMINATIONMEDICAMENT")
     private String denominationMedicament;
 
-    @Column(name = "")
+    @Column(name = "FORMEPHARMACEUTIQUE")
     private String formePharmaceutique;
 
-    @Column(name = "")
+    @Column(name = "STATUTADMINISTRATION")
     private String statutAdministratifAMM;
 
-    @Column(name = "")
+    @Column(name = "TYPEPROCEDURE")
     private String typeProcedureAMM;
 
-    @Column(name = "")
+    @Column(name = "ESTCOMMERCIALISE")
     private boolean estCommercialise;
 
-    @Column(name = "")
+    @Column(name = "DATEAMM")
     private LocalDateTime dateAMM;
 
-    @Column(name = "")
+    @Column(name = "STATUTBDM")
     private String statutBdm;
 
-    @Column(name = "")
+    @Column(name = "NUMEROEUROPEEN")
     private String numeroEuropeen;
 
-    @Column(name = "")
+    @Column(name = "TITULAIRE")
     private String titulaires;
 
-    @Column(name = "")
+    @Column(name = "ESTENSURVEILLANCERENFORCEE")
     private boolean estEnSurveillanceRenforcee;
 
     @OneToMany

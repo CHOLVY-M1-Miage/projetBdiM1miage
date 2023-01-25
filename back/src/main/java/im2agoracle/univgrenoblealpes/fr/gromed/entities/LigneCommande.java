@@ -14,7 +14,7 @@ public class LigneCommande {
     @EmbeddedId
     private LigneCommandeKey id;
 
-    @Column(name = "")
+    @Column(name = "QUANTITE", nullable = false)
     private int quantite;
 
     @ManyToOne

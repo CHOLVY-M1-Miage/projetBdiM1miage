@@ -14,37 +14,37 @@ import java.util.List;
 public class Presentation {
 
     @Id
-    @Column(name = "")
+    @Column(name = "ID")
     private int id;
 
-    @Column(name = "")
+    @Column(name = "CODECIP7")
     private int codeCIP7;
 
-    @Column(name = "")
+    @Column(name = "LIBELLEPRESTATION")
     private String libellePresentation;
 
-    @Column(name = "")
+    @Column(name = "ESTAUTORISE")
     private boolean estAutorise;
 
-    @Column(name = "")
+    @Column(name = "ETATCOMMERCIALISATION")
     private String etatCommercialisation;
 
-    @Column(name = "")
+    @Column(name = "DATEDECLARATIONCOMMERCIALISATION")
     private LocalDateTime dateDeclarationCommercialisation;
 
-    @Column(name = "")
+    @Column(name = "CODECIP13")
     private int codeCIP13;
 
-    @Column(name = "")
+    @Column(name = "AGREMENTCOLLECTIVITES")
     private boolean agrementCollectivites;
 
-    @Column(name = "")
+    @Column(name = "TAUXREMBOURSEMENT")
     private int tauxRemboursement;
 
-    @Column(name = "")
+    @Column(name = "PRIX")
     private float prix;
 
-    @Column(name = "")
+    @Column(name = "DROITREMBOURSEMENT")
     private String droitRemboursement;
 
     @ManyToOne

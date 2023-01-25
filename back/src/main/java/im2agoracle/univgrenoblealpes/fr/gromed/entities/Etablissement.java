@@ -14,18 +14,38 @@ public class Etablissement {
     }
 
     @Id
-    @Column(name="")
+    @Column(name="NUMEROFINESSEET")
     private int idEtab;
 
-    @Column(name="")
-    private String nomEtab;
+    private String raisonSociale;
 
-    @Column(name="")
-    private String adresse;
+    private String raisonSocialeLongue;
 
-    @Column(name="")
-    private String typeEtab;
+    private int numeroVoie;
 
+    private String typeVoie;
+
+    private String libelleVoie;
+
+    private String complementVoie;
+
+    private int codeCommune;
+
+    private int departement;
+
+    private String libDepartement;
+
+    private int telephone;
+
+    private int categorieEtablissement;
+
+    private String libelleCategEtab;
+
+    private int categAgregateEtab;
+
+    private String libelleCategAgregEtab;
+
+    private int numeroSiret;
 
     @OneToMany
     private List<Commande> commandes;
@@ -33,21 +53,20 @@ public class Etablissement {
     @OneToMany
     private List<Utilisateur> utilisateurs;
 
-
     public int getIdEtab() {
         return this.idEtab;
     }
 
     public String getNomEtab() {
-        return this.nomEtab;
+        return this.raisonSociale;
     }
 
     public String getAdresse() {
-        return this.adresse;
+        return this.libDepartement;
     }
 
     public String getTypeEtab() {
-        return this.typeEtab;
+        return this.libelleCategEtab;
     }
 
     public List<Commande> getCommandes() {

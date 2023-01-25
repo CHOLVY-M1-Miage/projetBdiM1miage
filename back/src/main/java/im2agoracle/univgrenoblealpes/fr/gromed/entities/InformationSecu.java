@@ -11,25 +11,25 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class InformationSecu {
 
-    public InformationSecu() {
-    }
-
     @Id
-    @Column(name = "")
+    @Column(name = "ID")
     private int id;
 
-    @Column(name = "")
+    @Column(name = "DATEDEBUTINFORMATIONSECU")
     private LocalDateTime dateDebutInfoSecurite;
 
-    @Column(name = "")
+    @Column(name = "DATEFININFORMATIONSECU")
     private LocalDateTime dateFinInfoSecurite;
 
-    @Column(name = "")
+    @Column(name = "INFORMATION")
     private String information;
 
     @ManyToOne
     @JoinColumn(name = "codeCIS")
     private Medicament medicament;
+
+    public InformationSecu() {
+    }
 
     public int getId() {
         return this.id;

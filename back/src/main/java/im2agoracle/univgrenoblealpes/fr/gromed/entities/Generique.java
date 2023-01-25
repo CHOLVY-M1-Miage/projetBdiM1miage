@@ -13,16 +13,16 @@ public class Generique {
     }
 
     @Id
-    @Column(name = "")
+    @Column(name = "ID")
     private int idGenerique;
 
-    @Column(name = "")
+    @Column(name = "LIBELLEGENERIQUE")
     private String libelleGenerique;
 
-    @Column(name = "")
+    @Column(name = "ESTGENERIQUE")
     private boolean estGenerique;
 
-    @Column(name = "")
+    @Column(name = "GROUPEGENERIQUE")
     private int groupeGenerique;
 
     @ManyToOne

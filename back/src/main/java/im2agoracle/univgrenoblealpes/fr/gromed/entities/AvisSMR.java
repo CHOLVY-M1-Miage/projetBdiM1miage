@@ -1,4 +1,4 @@
-package im2agoracle.univgrenoblealpes.fr.gromed.entitiesbdbd;
+package im2agoracle.univgrenoblealpes.fr.gromed.entities;
 
 import java.time.LocalDateTime;
 

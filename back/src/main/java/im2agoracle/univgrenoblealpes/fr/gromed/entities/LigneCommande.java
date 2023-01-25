@@ -19,12 +19,12 @@ public class LigneCommande {
 
     @ManyToOne
     @MapsId("idPresentation")
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "id_presentation")
     private Presentation presentation;
 
     @ManyToOne
     @MapsId("idCommande")
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "id_commande")
     private Commande commande;
 
     public LigneCommande(LigneCommandeKey id) {

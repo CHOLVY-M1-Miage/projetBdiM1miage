@@ -32,5 +32,6 @@ public class PresentationRepositoryTest {
     @Test
     void findByCIS(){
         List<Presentation> lPres = presentationRepository.findByMedicamentCodeCIS(123);
+        Assertions.assertEquals(1, lPres.size());
     }
 }

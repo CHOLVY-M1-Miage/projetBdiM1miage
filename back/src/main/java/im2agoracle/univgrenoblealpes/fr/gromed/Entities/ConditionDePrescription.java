@@ -6,9 +6,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Prescription {
+public class ConditionDePrescription {
 
-    public Prescription() {
+    public ConditionDePrescription() {
     }
 
     @Id

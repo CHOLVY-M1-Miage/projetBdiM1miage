@@ -11,43 +11,39 @@ import jakarta.persistence.OneToMany;
 @Entity
 public class Medicament {
 
-    public Medicament() {
-    }
-
     @Id
-    @Column(name="")
+    @Column(name = "")
     private int codeCIS;
-        
-    @Column(name="")
-    private String denominationMedicament;
-        
-    @Column(name="")
-    private String formePharmaceutique;
-        
-    @Column(name="")
-    private String statutAdministratifAMM;
-        
-    @Column(name="")
-    private String typeProcedureAMM;
-        
-    @Column(name="")
-    private boolean estCommercialise;
-        
-    @Column(name="")
-    private LocalDateTime dateAMM;
-        
-    @Column(name="")
-    private String statutBdm;
-        
-    @Column(name="")
-    private String numeroEuropeen;
-        
-    @Column(name="")
-    private String titulaires;
-        
-    @Column(name="")
-    private boolean estEnSurveillanceRenforcee;
 
+    @Column(name = "")
+    private String denominationMedicament;
+
+    @Column(name = "")
+    private String formePharmaceutique;
+
+    @Column(name = "")
+    private String statutAdministratifAMM;
+
+    @Column(name = "")
+    private String typeProcedureAMM;
+
+    @Column(name = "")
+    private boolean estCommercialise;
+
+    @Column(name = "")
+    private LocalDateTime dateAMM;
+
+    @Column(name = "")
+    private String statutBdm;
+
+    @Column(name = "")
+    private String numeroEuropeen;
+
+    @Column(name = "")
+    private String titulaires;
+
+    @Column(name = "")
+    private boolean estEnSurveillanceRenforcee;
 
     @OneToMany
     private List<AvisSMR> avisSMRs;
@@ -70,6 +66,8 @@ public class Medicament {
     @OneToMany
     private List<ConditionDePrescription> ConditionsDePrescription;
 
+    public Medicament() {
+    }
 
     public int getCodeCIS() {
         return this.codeCIS;

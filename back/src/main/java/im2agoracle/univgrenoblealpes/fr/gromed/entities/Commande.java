@@ -3,21 +3,16 @@ package im2agoracle.univgrenoblealpes.fr.gromed.entities;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import im2agoracle.univgrenoblealpes.fr.gromed.keys.LigneCommandeKey;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 
 @Entity
 public class Commande {
-
-    public Commande() {
-        this.estPanier = true;
-        this.estConfirme = false;
-        this.estTermine = false;
-        this.estCommandeType = false;
-    }
 
     @Id
     @Column(name="")
@@ -39,11 +34,20 @@ public class Commande {
     private boolean estCommandeType;
 
     
-    @OneToMany
+    @OneToMany(mappedBy = "commande")
     private List<LigneCommande> lignesCommande;
 
     @ManyToOne
+    @JoinColumn(name = "idEtab")
     private Etablissement etablissement;
+
+
+    public Commande() {
+        this.estPanier = true;
+        this.estConfirme = false;
+        this.estTermine = false;
+        this.estCommandeType = false;
+    }
 
 
     public int getId() {
@@ -94,8 +98,8 @@ public class Commande {
         return this.lignesCommande;
     }
 
-    public void addLigneCommande(int idPresentation) {
-        LigneCommande newLigneCommande = new LigneCommande(idPresentation);
+    public void addLigneCommande(LigneCommandeKey id) {
+        LigneCommande newLigneCommande = new LigneCommande(id);
         this.lignesCommande.add(newLigneCommande);
     }
 

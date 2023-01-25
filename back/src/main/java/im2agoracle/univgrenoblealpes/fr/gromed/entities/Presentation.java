@@ -3,6 +3,7 @@ package im2agoracle.univgrenoblealpes.fr.gromed.entities;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 
@@ -12,60 +13,52 @@ import java.util.List;
 @Entity
 public class Presentation {
 
+    @Id
+    @Column(name = "")
+    private int id;
+
+    @Column(name = "")
+    private int codeCIP7;
+
+    @Column(name = "")
+    private String libellePresentation;
+
+    @Column(name = "")
+    private boolean estAutorise;
+
+    @Column(name = "")
+    private String etatCommercialisation;
+
+    @Column(name = "")
+    private LocalDateTime dateDeclarationCommercialisation;
+
+    @Column(name = "")
+    private int codeCIP13;
+
+    @Column(name = "")
+    private boolean agrementCollectivites;
+
+    @Column(name = "")
+    private int tauxRemboursement;
+
+    @Column(name = "")
+    private float prix;
+
+    @Column(name = "")
+    private String droitRemboursement;
+
+    @ManyToOne
+    @JoinColumn(name = "codeCIS")
+    private Medicament medicament;
+
+    @OneToMany(mappedBy = "presentation")
+    private List<LigneCommande> lignesCommande;
+
     public Presentation() {
     }
 
-    @Id
-    @Column(name="")
-    private int id; 
-
-    @Column(name="")
-    private int codeCIS_Medicament;
-
-    @Column(name="")
-    private int codeCIP7;
-
-    @Column(name="")
-    private String libellePresentation; 
-
-    @Column(name="")
-    private boolean estAuthorise;
-        
-    @Column(name="")
-    private String etatCommercialisation;
-        
-    @Column(name="")
-    private LocalDateTime dateDeclarationCommercialisation;
-        
-    @Column(name="")
-    private int codeCIP13;
-        
-    @Column(name="")
-    private boolean agrementCollectivites;
-        
-    @Column(name="")
-    private int tauxRemboursement;
-        
-    @Column(name="")
-    private float prix;
-        
-    @Column(name="")
-    private String droitRemboursement;
-
-
-    @ManyToOne
-    private Medicament medicament;
-
-    @OneToMany
-    private List<LigneCommande> lignesCommande;
-
-
     public int getId() {
         return this.id;
-    }
-
-    public int getCodeCIS() {
-        return this.codeCIS_Medicament;
     }
 
     public int getCodeCIP7() {
@@ -76,8 +69,8 @@ public class Presentation {
         return this.libellePresentation;
     }
 
-    public boolean getEstAuthorise() {
-        return this.estAuthorise;
+    public boolean getEstAutorise() {
+        return this.estAutorise;
     }
 
     public String getEtatCommercialisation() {

@@ -9,39 +9,37 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class CompositionMedicament {
 
-    public CompositionMedicament() {
-    }
-
     @Id
-    @Column(name="")
+    @Column(name = "ID")
     private int id;
 
-    @Column(name="")
+    @Column(name = "DESIGNATIONPHARMACEUTIQUE")
     private String designationPharmaceutique;
 
-    @Column(name="")
+    @Column(name = "CODESUBSTANCE")
     private int codeSubstance;
 
-    @Column(name="")
+    @Column(name = "DENOMINATIONSUBSTANCE")
     private String denominationSubstance;
 
-    @Column(name="")
+    @Column(name = "DOSAGESUBSTANCE")
     private String dosageSubstance;
 
-    @Column(name="")
+    @Column(name = "REFDOSAGE")
     private String refDosage;
 
-    @Column(name="")
+    @Column(name = "ESTACTIF")
     private boolean estActif;
 
-    @Column(name="")
+    @Column(name = "NUMSAST")
     private int numSAST;
-
 
     @ManyToOne
     @JoinColumn(name = "codeCIS")
     private Medicament medicament;
-    
+
+    public CompositionMedicament() {
+    }
 
     public int getId() {
         return this.id;

@@ -8,10 +8,10 @@ import jakarta.persistence.Embeddable;
 @Embeddable
 public class AvisSMRKey implements Serializable {
 
-    @Column(name = "")
+    @Column(name = "CODECISMEDICAMENT")
     private int codeCIS_Medicament;
 
-    @Column(name = "")
+    @Column(name = "CODEHASPAGE")
     private int codeHAS_PageCT;
 
     private AvisSMRKey() {

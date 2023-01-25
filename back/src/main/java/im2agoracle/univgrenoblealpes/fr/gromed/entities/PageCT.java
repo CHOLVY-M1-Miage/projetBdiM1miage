@@ -11,10 +11,10 @@ import jakarta.persistence.OneToMany;
 public class PageCT {
 
     @Id
-    @Column(name = "")
+    @Column(name = "CODEHAS")
     private int codeHAS;
 
-    @Column(name = "")
+    @Column(name = "LIENPAGECT")
     private String lienPageCT;
 
     @OneToMany

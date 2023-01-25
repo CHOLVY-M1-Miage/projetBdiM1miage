@@ -13,10 +13,10 @@ public class VoieAdministration {
     }
 
     @Id
-    @Column(name = "")
+    @Column(name = "ID")
     private int id;
 
-    @Column(name = "")
+    @Column(name = "MOYENDADMINISTRATION")
     private String moyenAdministration;
 
     @ManyToOne

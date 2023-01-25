@@ -16,16 +16,16 @@ public class AvisSMR {
     @EmbeddedId
     private AvisSMRKey id;
 
-    @Column(name = "")
+    @Column(name = "MOTIFEVALUATION")
     private String motifEvaluation;
 
-    @Column(name = "")
+    @Column(name = "DATECT")
     private LocalDateTime dateCT;
 
-    @Column(name = "")
+    @Column(name = "VALEURSMR")
     private String valeurSMR;
 
-    @Column(name = "")
+    @Column(name = "LIBELLESMR")
     private String libelleSMR;
 
     @ManyToOne

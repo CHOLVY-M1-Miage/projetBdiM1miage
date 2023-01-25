@@ -26,7 +26,40 @@ public class Etablissement {
     @Column(name="")
     private String typeEtab;
 
+
+    @OneToMany
+    private List<Commande> commandes;
+
     @OneToMany
     private List<Utilisateur> utilisateurs;
 
+
+    public int getIdEtab() {
+        return this.idEtab;
+    }
+
+    public String getNomEtab() {
+        return this.nomEtab;
+    }
+
+    public String getAdresse() {
+        return this.adresse;
+    }
+
+    public String getTypeEtab() {
+        return this.typeEtab;
+    }
+
+    public List<Commande> getCommandes() {
+        return this.commandes;
+    }
+
+    public void addCommande() {
+        Commande newCommande = new Commande();
+        this.commandes.add(newCommande);
+    }
+
+    public List<Utilisateur> getUtilisateurs() {
+        return this.utilisateurs;
+    }
 }

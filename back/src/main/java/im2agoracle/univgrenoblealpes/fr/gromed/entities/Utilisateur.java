@@ -5,7 +5,7 @@ import java.util.List;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Utilisateur {
@@ -20,7 +20,7 @@ public class Utilisateur {
     @Column(name="")
     private String nom;
 
-    @OneToMany
-    private List<Commande> commandes;
+    @ManyToOne
+    private Etablissement etablissement;
 
 }

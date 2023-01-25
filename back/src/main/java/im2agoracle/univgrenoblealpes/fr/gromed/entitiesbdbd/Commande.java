@@ -1,4 +1,4 @@
-package im2agoracle.univgrenoblealpes.fr.gromed.entities;
+package im2agoracle.univgrenoblealpes.fr.gromed.entitiesbdbd;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -31,6 +31,7 @@ public class Commande {
     @Column(name="")
     private boolean estTermine;
 
+    
     @OneToMany
     private List<LigneCommande> lignesCommandes;
 

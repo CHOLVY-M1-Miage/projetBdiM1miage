@@ -1,4 +1,4 @@
-package im2agoracle.univgrenoblealpes.fr.gromed.entities;
+package im2agoracle.univgrenoblealpes.fr.gromed.entitiesbdbd;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

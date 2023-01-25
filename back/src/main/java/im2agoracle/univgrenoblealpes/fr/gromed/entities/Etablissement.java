@@ -21,6 +21,54 @@ public class Etablissement {
 
     private String raisonSocialeLongue;
 
+    public String getRaisonSocialeLongue() {
+        return raisonSocialeLongue;
+    }
+
+    public int getNumeroVoie() {
+        return numeroVoie;
+    }
+
+    public String getTypeVoie() {
+        return typeVoie;
+    }
+
+    public String getLibelleVoie() {
+        return libelleVoie;
+    }
+
+    public String getComplementVoie() {
+        return complementVoie;
+    }
+
+    public int getCodeCommune() {
+        return codeCommune;
+    }
+
+    public int getDepartement() {
+        return departement;
+    }
+
+    public int getTelephone() {
+        return telephone;
+    }
+
+    public int getCategorieEtablissement() {
+        return categorieEtablissement;
+    }
+
+    public int getCategAgregateEtab() {
+        return categAgregateEtab;
+    }
+
+    public String getLibelleCategAgregEtab() {
+        return libelleCategAgregEtab;
+    }
+
+    public int getNumeroSiret() {
+        return numeroSiret;
+    }
+
     private int numeroVoie;
 
     private String typeVoie;
@@ -57,15 +105,15 @@ public class Etablissement {
         return this.idEtab;
     }
 
-    public String getNomEtab() {
+    public String getRaisonSociale() {
         return this.raisonSociale;
     }
 
-    public String getAdresse() {
+    public String getLibDepartement() {
         return this.libDepartement;
     }
 
-    public String getTypeEtab() {
+    public String getLibelleCategEtab() {
         return this.libelleCategEtab;
     }
 

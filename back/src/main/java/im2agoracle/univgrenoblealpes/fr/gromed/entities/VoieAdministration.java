@@ -7,9 +7,9 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Utilisateur {
+public class VoieAdministration {
 
-    public Utilisateur() {
+    public VoieAdministration() {
     }
 
     @Id
@@ -17,10 +17,18 @@ public class Utilisateur {
     private int id;
 
     @Column(name = "")
-    private String nom;
+    private String moyenAdministration;
 
     @ManyToOne
-    @JoinColumn(name = "idEtab")
-    private Etablissement etablissement;
+    @JoinColumn(name = "codeCIS")
+    private Medicament medicament;
+
+    public int getId() {
+        return this.id;
+    }
+
+    public String getMoyenAdministration() {
+        return this.moyenAdministration;
+    }
 
 }

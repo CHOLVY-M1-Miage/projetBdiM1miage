@@ -3,6 +3,7 @@ package im2agoracle.univgrenoblealpes.fr.gromed.entities;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
@@ -12,19 +13,40 @@ public class Generique {
     }
 
     @Id
-    @Column(name="")
-    int idGenerique;
+    @Column(name = "")
+    private int idGenerique;
 
-    @Column(name="")
-    String libelleGenerique;
+    @Column(name = "")
+    private String libelleGenerique;
 
-    @Column(name="")
-    int typeGenerique;
+    @Column(name = "")
+    private boolean estGenerique;
 
-    @Column(name="")
-    int groupeGenerique;
+    @Column(name = "")
+    private int groupeGenerique;
 
     @ManyToOne
-    Medicament medicament;
-    
+    @JoinColumn(name = "codeCIS")
+    private Medicament medicament;
+
+    public int getIdGenerique() {
+        return this.idGenerique;
+    }
+
+    public String getLibelleGenerique() {
+        return this.libelleGenerique;
+    }
+
+    public boolean getEstGenerique() {
+        return this.estGenerique;
+    }
+
+    public int getGroupeGenerique() {
+        return this.groupeGenerique;
+    }
+
+    public Medicament getMedicament() {
+        return this.medicament;
+    }
+
 }

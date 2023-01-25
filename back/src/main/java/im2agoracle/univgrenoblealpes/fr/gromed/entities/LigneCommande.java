@@ -1,27 +1,57 @@
 package im2agoracle.univgrenoblealpes.fr.gromed.entities;
 
+import im2agoracle.univgrenoblealpes.fr.gromed.keys.LigneCommandeKey;
 import jakarta.persistence.Column;
+import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.MapsId;
 
 @Entity
 public class LigneCommande {
 
-    public LigneCommande() {
-    }
+    @EmbeddedId
+    private LigneCommandeKey id;
 
-    @Id
-    @Column(name="")
-    private int id;
-
-    @Column(name="")
+    @Column(name = "")
     private int quantite;
 
     @ManyToOne
+    @MapsId("idPresentation")
+    @JoinColumn(name = "id")
     private Presentation presentation;
 
     @ManyToOne
+    @MapsId("idCommande")
+    @JoinColumn(name = "id")
     private Commande commande;
+
+    public LigneCommande(LigneCommandeKey id) {
+        this.id = id;
+        this.quantite = 1;
+    }
+
+    public LigneCommandeKey getId() {
+        return this.id;
+    }
+
+    public int getQuantite() {
+        return this.quantite;
+    }
+
+    public void setQuantite(int newQuantite) {
+        if (newQuantite > 0) {
+            this.quantite = newQuantite;
+        }
+    }
+
+    public Presentation getPresentation() {
+        return this.presentation;
+    }
+
+    public Commande getCommande() {
+        return this.commande;
+    }
 
 }

@@ -37,7 +37,7 @@ public class PresentationController {
         }
     }
 
-    @GetMapping("/{medicamentCodeCIS}")
+    @GetMapping("/medicament/{medicamentCodeCIS}")
     public List<Presentation> getPresentationsByMedicamentCodeCIS(@PathVariable(value = "medicamentCodeCIS") int id) {
         try {
             List<Presentation> presentations = presentationService.getPresentationsByMedicamentCodeCIS(id);

@@ -3,6 +3,8 @@ package im2agoracle.univgrenoblealpes.fr.gromed.entities;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -13,7 +15,7 @@ public class Medicament {
 
     @Id
     @Column(name = "CODECIS")
-    private int codeCIS;
+    private long codeCIS;
 
     @Column(name = "DENOMINATIONMEDICAMENT")
     private String denominationMedicament;
@@ -45,13 +47,13 @@ public class Medicament {
     @Column(name = "ESTENSURVEILLANCERENFORCEE")
     private boolean estEnSurveillanceRenforcee;
 
-    @OneToMany
+    @OneToMany(mappedBy = "medicament")
     private List<AvisSMR> avisSMRs;
 
-    @OneToMany
+    @OneToMany(mappedBy = "medicament")
     private List<Presentation> presentations;
 
-    @OneToMany
+    @OneToMany(mappedBy = "medicament")
     private List<CompositionMedicament> substances;
 
     @OneToMany
@@ -69,7 +71,7 @@ public class Medicament {
     public Medicament() {
     }
 
-    public int getCodeCIS() {
+    public long getCodeCIS() {
         return this.codeCIS;
     }
 

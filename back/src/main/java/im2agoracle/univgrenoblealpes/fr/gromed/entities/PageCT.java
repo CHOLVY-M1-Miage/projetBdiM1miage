@@ -12,7 +12,7 @@ public class PageCT {
 
     @Id
     @Column(name = "CODEHAS")
-    private int codeHAS;
+    private long codeHAS;
 
     @Column(name = "LIENPAGECT")
     private String lienPageCT;
@@ -23,7 +23,7 @@ public class PageCT {
     public PageCT() {
     }
 
-    public int getCodeHAS() {
+    public long getCodeHAS() {
         return this.codeHAS;
     }
 

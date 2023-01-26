@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import im2agoracle.univgrenoblealpes.fr.gromed.entities.Medicament;
 
 @Repository
-public interface MedicamentRepository extends JpaRepository<Medicament, Integer> {
+public interface MedicamentRepository extends JpaRepository<Medicament, Long> {
     
     
 }

@@ -12,7 +12,7 @@ public class Etablissement {
 
     @Id
     @Column(name = "NUMEROFINESSEET")
-    private int idEtab;
+    private long idEtab;
 
     @Column(name = "RAISONSOCIALE")
     private String raisonSociale;
@@ -42,7 +42,7 @@ public class Etablissement {
     private String libDepartement;
 
     @Column(name = "TELEPHONE")
-    private int telephone;
+    private long telephone;
 
     @Column(name = "CATEGORIEETABLISSEMENT")
     private int categorieEtablissement;
@@ -57,7 +57,7 @@ public class Etablissement {
     private String libelleCategAgregEtab;
 
     @Column(name = "NUMEROSIRET")
-    private int numeroSiret;
+    private long numeroSiret;
 
     @OneToMany
     private List<Commande> commandes;
@@ -68,7 +68,7 @@ public class Etablissement {
     public Etablissement() {
     }
 
-    public int getIdEtab() {
+    public long getIdEtab() {
         return this.idEtab;
     }
 
@@ -104,7 +104,7 @@ public class Etablissement {
         return departement;
     }
 
-    public int getTelephone() {
+    public long getTelephone() {
         return telephone;
     }
 
@@ -128,7 +128,7 @@ public class Etablissement {
         return libelleCategAgregEtab;
     }
 
-    public int getNumeroSiret() {
+    public long getNumeroSiret() {
         return numeroSiret;
     }
 

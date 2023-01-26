@@ -30,12 +30,12 @@ public class AvisSMR {
 
     @ManyToOne
     @MapsId("codeCIS_Medicament")
-    @JoinColumn(name = "codeCIS")
+    @JoinColumn(name = "codeCISmedicament")
     private Medicament medicament;
 
     @ManyToOne
     @MapsId("codeHAS_PageCT")
-    @JoinColumn(name = "cadeHAS")
+    @JoinColumn(name = "codeHASpage")
     private PageCT pageCT;
 
     public AvisSMR() {

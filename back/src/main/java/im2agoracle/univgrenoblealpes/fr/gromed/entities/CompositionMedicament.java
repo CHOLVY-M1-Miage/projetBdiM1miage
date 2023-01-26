@@ -17,7 +17,7 @@ public class CompositionMedicament {
     private String designationPharmaceutique;
 
     @Column(name = "CODESUBSTANCE")
-    private int codeSubstance;
+    private long codeSubstance;
 
     @Column(name = "DENOMINATIONSUBSTANCE")
     private String denominationSubstance;
@@ -32,7 +32,7 @@ public class CompositionMedicament {
     private boolean estActif;
 
     @Column(name = "NUMSAST")
-    private int numSAST;
+    private long numSAST;
 
     @ManyToOne
     @JoinColumn(name = "codeCIS")
@@ -49,7 +49,7 @@ public class CompositionMedicament {
         return this.designationPharmaceutique;
     }
 
-    public int getCodeSubstance() {
+    public long getCodeSubstance() {
         return this.codeSubstance;
     }
 
@@ -69,7 +69,7 @@ public class CompositionMedicament {
         return this.estActif;
     }
 
-    public int getNumSAST() {
+    public long getNumSAST() {
         return this.numSAST;
     }
 

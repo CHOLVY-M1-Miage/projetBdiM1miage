@@ -23,7 +23,7 @@ public class MedicamentRepositoryTest {
 
     @Test
     void findMedocById(){
-        Optional<Medicament> medoc = medicamentRepository.findById(123);
+        Optional<Medicament> medoc = medicamentRepository.findById(new Long(123));
 
         Assertions.assertTrue(medoc.isPresent());
     }

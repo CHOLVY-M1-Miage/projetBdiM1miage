@@ -54,4 +54,8 @@ public class LigneCommande {
         return this.commande;
     }
 
+    public void setCommande(Commande newCommande) {
+        this.commande = newCommande;
+    }
+
 }

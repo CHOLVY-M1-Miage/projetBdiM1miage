@@ -14,4 +14,5 @@ public interface LigneCommandeRepository extends JpaRepository<LigneCommande, Li
     
     @Query(value = "SELECT l from Ligne_Commande l where l.id_commande = ?1", nativeQuery=true)
     List<LigneCommande> findByIdCommande(int idCommande);
+
 }

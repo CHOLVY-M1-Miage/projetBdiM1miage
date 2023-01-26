@@ -15,6 +15,9 @@
 	<description>gromed project group 7 (bdi)</description>
 	<properties>
 		<java.version>19</java.version>
+		<sonar.host.url>http://im2ag-sonar.u-ga.fr:9000</sonar.host.url>
+		<sonar.projectKey>im2ag-oracle.univ-grenoble-alpes.fr:gromed</sonar.projectKey>
+  		<sonar.login>317460d3ede8d56f155eba3671dea6589ad6547d</sonar.login>
 	</properties>
 	<dependencies>
 		<dependency>

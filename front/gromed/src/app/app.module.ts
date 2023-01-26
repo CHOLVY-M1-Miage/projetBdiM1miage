@@ -15,6 +15,7 @@ import { ManegeComponent } from './components/home/panier/manege/manege.componen
 import { FiltreComponent } from './components/home/recherche/filtre/filtre.component';
 import { ResultatComponent } from './components/home/recherche/resultat/resultat.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -31,11 +32,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FiltreComponent,
     ResultatComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

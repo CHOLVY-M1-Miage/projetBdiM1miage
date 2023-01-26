@@ -1,19 +1,21 @@
-.collum{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    vertical-align: center;
-    align-items: center;
-    padding: 2%;
+.collum {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  vertical-align: center;
+  align-items: center;
+  padding: 2%;
 }
-.logo{
-    border: 1px dotted black;
-    min-height:  15vh;
-    min-width: 40vw;
-    margin-bottom: 2vw;
+
+.logo {
+  border: 1px dotted black;
+  min-height: 15vh;
+  min-width: 40vw;
+  margin-bottom: 2vw;
 }
-.login{
-    border: 1px dotted black;
-    min-height:  60vh;
-    min-width: 80vw;
+
+.login {
+  border: 1px dotted black;
+  min-height: 60vh;
+  min-width: 80vw;
 }

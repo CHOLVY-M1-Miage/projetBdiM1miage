@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import im2agoracle.univgrenoblealpes.fr.gromed.entities.Etablissement;
 
 @Repository
-public interface EtablissementRepository extends JpaRepository<Etablissement, Integer>{
+public interface EtablissementRepository extends JpaRepository<Etablissement, Long>{
     
 }

@@ -14,6 +14,9 @@ public class Generique {
 
     @Id
     @Column(name = "ID")
+    private int id;
+
+    @Column(name = "IDGENERIQUE")
     private int idGenerique;
 
     @Column(name = "LIBELLEGENERIQUE")
@@ -28,6 +31,10 @@ public class Generique {
     @ManyToOne
     @JoinColumn(name = "codeCIS")
     private Medicament medicament;
+
+    public int getId() {
+        return this.id;
+    }
 
     public int getIdGenerique() {
         return this.idGenerique;

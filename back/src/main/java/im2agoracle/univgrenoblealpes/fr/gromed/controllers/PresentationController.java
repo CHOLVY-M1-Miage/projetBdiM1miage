@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import im2agoracle.univgrenoblealpes.fr.gromed.entities.Presentation;
-import services.PresentationService;
+import im2agoracle.univgrenoblealpes.fr.gromed.services.PresentationService;
 
 @RestController
 @CrossOrigin

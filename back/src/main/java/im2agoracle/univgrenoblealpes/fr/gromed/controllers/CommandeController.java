@@ -14,8 +14,8 @@ import org.springframework.web.server.ResponseStatusException;
 
 import im2agoracle.univgrenoblealpes.fr.gromed.entities.Commande;
 import im2agoracle.univgrenoblealpes.fr.gromed.entities.LigneCommande;
-import services.CommandeService;
-import services.LigneCommandeService;
+import im2agoracle.univgrenoblealpes.fr.gromed.services.CommandeService;
+import im2agoracle.univgrenoblealpes.fr.gromed.services.LigneCommandeService;
 
 @RestController
 @CrossOrigin

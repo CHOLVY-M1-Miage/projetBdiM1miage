@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {DataCenterService} from "../../../service/data-center.service";
 
 @Component({
   selector: 'app-connecteur',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./connecteur.component.css']
 })
 export class ConnecteurComponent {
+  //dentifiant: string;
+  //mdp: string;
+
+  constructor(private dataCenter: DataCenterService) {}
+
+  identifiantChange(){
+
+  }
+
 
 }

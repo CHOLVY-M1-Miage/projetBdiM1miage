@@ -14,6 +14,8 @@ import { ContenueComponent } from './components/home/panier/contenue/contenue.co
 import { ManegeComponent } from './components/home/panier/manege/manege.component';
 import { FiltreComponent } from './components/home/recherche/filtre/filtre.component';
 import { ResultatComponent } from './components/home/recherche/resultat/resultat.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -30,10 +32,12 @@ import { ResultatComponent } from './components/home/recherche/resultat/resultat
     FiltreComponent,
     ResultatComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -8,10 +8,6 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Utilisateur {
-
-    public Utilisateur() {
-    }
-
     @Id
     @Column(name = "ID")
     private int id;

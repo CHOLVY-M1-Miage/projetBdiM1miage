@@ -20,9 +20,6 @@ public class PageCT {
     @OneToMany
     private List<AvisSMR> avisSMRs;
 
-    public PageCT() {
-    }
-
     public long getCodeHAS() {
         return this.codeHAS;
     }

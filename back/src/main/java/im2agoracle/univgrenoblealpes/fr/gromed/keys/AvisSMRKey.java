@@ -14,9 +14,6 @@ public class AvisSMRKey implements Serializable {
     @Column(name="CODEHASPAGE")
     private int codeHAS_PageCT;
 
-    private AvisSMRKey() {
-    }
-
     public long getCodeCIS() {
         return this.codeCIS_Medicament;
     }

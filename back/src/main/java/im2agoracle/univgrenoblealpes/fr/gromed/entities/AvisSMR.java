@@ -38,9 +38,6 @@ public class AvisSMR {
     @JoinColumn(name = "codeHASpage")
     private PageCT pageCT;
 
-    public AvisSMR() {
-    }
-
     public String getMotifEvaluation() {
         return this.motifEvaluation;
     }

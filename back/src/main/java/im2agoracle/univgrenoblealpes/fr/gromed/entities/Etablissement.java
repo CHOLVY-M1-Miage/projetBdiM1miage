@@ -65,9 +65,6 @@ public class Etablissement {
     @OneToMany
     private List<Utilisateur> utilisateurs;
 
-    public Etablissement() {
-    }
-
     public long getIdEtab() {
         return this.idEtab;
     }

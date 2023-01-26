@@ -16,14 +16,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 @DataJpaTest
 @Sql(scripts = "/create-medicament.sql")
 @Sql(scripts = "/cleanup-medicament.sql", executionPhase = AFTER_TEST_METHOD)
-public class MedicamentRepositoryTest {
+class MedicamentRepositoryTest {
         
     @Autowired
     private MedicamentRepository medicamentRepository;
 
     @Test
     void findMedocById(){
-        Optional<Medicament> medoc = medicamentRepository.findById(new Long(123));
+        Optional<Medicament> medoc = medicamentRepository.findById(Long.valueOf(123));
 
         Assertions.assertTrue(medoc.isPresent());
     }

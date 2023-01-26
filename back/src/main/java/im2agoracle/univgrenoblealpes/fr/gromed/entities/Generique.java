@@ -9,9 +9,6 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class Generique {
 
-    public Generique() {
-    }
-
     @Id
     @Column(name = "ID")
     private int idGenerique;

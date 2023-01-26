@@ -18,7 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @DataJpaTest
 @Sql(scripts = "/create-medicament.sql")
 @Sql(scripts = "/cleanup-medicament.sql", executionPhase = AFTER_TEST_METHOD)
-public class PresentationRepositoryTest {
+class PresentationRepositoryTest {
     
     @Autowired
     private PresentationRepository presentationRepository;

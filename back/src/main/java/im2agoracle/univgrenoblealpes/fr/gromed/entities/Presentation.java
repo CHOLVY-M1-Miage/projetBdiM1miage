@@ -5,10 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -53,13 +51,7 @@ public class Presentation {
     @JsonIgnore
     @JoinColumn(name = "codeCIS")
     private Medicament medicament;
-
-    //@OneToMany(mappedBy = "presentation")
-    //private List<LigneCommande> lignesCommande;
-
-    public Presentation() {
-    }
-
+    
     public int getId() {
         return this.id;
     }
@@ -107,9 +99,4 @@ public class Presentation {
     public Medicament getMedicament() {
         return this.medicament;
     }
-
-    /*public List<LigneCommande> getLignesCommande() {
-        return this.lignesCommande;
-    }//*/
-
 }

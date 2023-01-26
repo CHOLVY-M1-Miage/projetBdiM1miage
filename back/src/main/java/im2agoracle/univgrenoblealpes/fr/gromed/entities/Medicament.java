@@ -3,8 +3,6 @@ package im2agoracle.univgrenoblealpes.fr.gromed.entities;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -66,10 +64,7 @@ public class Medicament {
     private List<InformationSecu> informations;
 
     @OneToMany
-    private List<ConditionDePrescription> ConditionsDePrescription;
-
-    public Medicament() {
-    }
+    private List<ConditionDePrescription> conditionsDePrescription;
 
     public long getCodeCIS() {
         return this.codeCIS;
@@ -140,7 +135,7 @@ public class Medicament {
     }
 
     public List<ConditionDePrescription> getConditionsDePrescription() {
-        return this.ConditionsDePrescription;
+        return this.conditionsDePrescription;
     }
 
 }

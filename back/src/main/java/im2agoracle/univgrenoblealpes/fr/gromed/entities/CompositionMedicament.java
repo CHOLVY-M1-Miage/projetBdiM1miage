@@ -38,9 +38,6 @@ public class CompositionMedicament {
     @JoinColumn(name = "codeCIS")
     private Medicament medicament;
 
-    public CompositionMedicament() {
-    }
-
     public int getId() {
         return this.id;
     }

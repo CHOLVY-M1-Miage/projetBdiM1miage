@@ -14,9 +14,6 @@ public class LigneCommandeKey implements Serializable {
     @Column(name = "")
     private int idCommande;
 
-    private LigneCommandeKey() {
-    }
-
     public int getIdPresentation() {
         return this.idPresentation;
     }

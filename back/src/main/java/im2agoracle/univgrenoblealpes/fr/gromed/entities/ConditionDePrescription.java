@@ -9,9 +9,6 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class ConditionDePrescription {
 
-    public ConditionDePrescription() {
-    }
-
     @Id
     @Column(name = "ID")
     private int id;

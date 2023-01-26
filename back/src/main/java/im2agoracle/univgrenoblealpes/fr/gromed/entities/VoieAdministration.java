@@ -9,9 +9,6 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class VoieAdministration {
 
-    public VoieAdministration() {
-    }
-
     @Id
     @Column(name = "ID")
     private int id;

@@ -28,9 +28,6 @@ public class InformationSecu {
     @JoinColumn(name = "codeCIS")
     private Medicament medicament;
 
-    public InformationSecu() {
-    }
-
     public int getId() {
         return this.id;
     }

@@ -10,16 +10,71 @@ import jakarta.persistence.OneToMany;
 @Entity
 public class Etablissement {
 
+    @Id
+    @Column(name = "NUMEROFINESSEET")
+    private int idEtab;
+
+    @Column(name = "RAISONSOCIALE")
+    private String raisonSociale;
+
+    @Column(name = "RAISONSOCIALELONGUE")
+    private String raisonSocialeLongue;
+
+    @Column(name = "NUMEROVOIE")
+    private int numeroVoie;
+
+    @Column(name = "TYPEVOIE")
+    private String typeVoie;
+
+    @Column(name = "LIBELLEVOIE")
+    private String libelleVoie;
+
+    @Column(name = "COMPLEMENTVOIE")
+    private String complementVoie;
+
+    @Column(name = "CODECOMMUNE")
+    private int codeCommune;
+
+    @Column(name = "DEPARTEMENT")
+    private int departement;
+
+    @Column(name = "LIBDEPARTEMENT")
+    private String libDepartement;
+
+    @Column(name = "TELEPHONE")
+    private int telephone;
+
+    @Column(name = "CATEGORIEETABLISSEMENT")
+    private int categorieEtablissement;
+
+    @Column(name = "LIBELLECATEGORIEETABLISSEMENT")
+    private String libelleCategEtab;
+
+    @Column(name = "CATEGORIEAGREGATETABLISSEMENT")
+    private int categAgregateEtab;
+
+    @Column(name = "LIBELLECATEGORIEAGREGATETABLISSEMENT")
+    private String libelleCategAgregEtab;
+
+    @Column(name = "NUMEROSIRET")
+    private int numeroSiret;
+
+    @OneToMany
+    private List<Commande> commandes;
+
+    @OneToMany
+    private List<Utilisateur> utilisateurs;
+
     public Etablissement() {
     }
 
-    @Id
-    @Column(name="NUMEROFINESSEET")
-    private int idEtab;
+    public int getIdEtab() {
+        return this.idEtab;
+    }
 
-    private String raisonSociale;
-
-    private String raisonSocialeLongue;
+    public String getRaisonSociale() {
+        return this.raisonSociale;
+    }
 
     public String getRaisonSocialeLongue() {
         return raisonSocialeLongue;
@@ -53,6 +108,14 @@ public class Etablissement {
         return telephone;
     }
 
+    public String getLibDepartement() {
+        return this.libDepartement;
+    }
+
+    public String getLibelleCategEtab() {
+        return this.libelleCategEtab;
+    }
+
     public int getCategorieEtablissement() {
         return categorieEtablissement;
     }
@@ -67,54 +130,6 @@ public class Etablissement {
 
     public int getNumeroSiret() {
         return numeroSiret;
-    }
-
-    private int numeroVoie;
-
-    private String typeVoie;
-
-    private String libelleVoie;
-
-    private String complementVoie;
-
-    private int codeCommune;
-
-    private int departement;
-
-    private String libDepartement;
-
-    private int telephone;
-
-    private int categorieEtablissement;
-
-    private String libelleCategEtab;
-
-    private int categAgregateEtab;
-
-    private String libelleCategAgregEtab;
-
-    private int numeroSiret;
-
-    @OneToMany
-    private List<Commande> commandes;
-
-    @OneToMany
-    private List<Utilisateur> utilisateurs;
-
-    public int getIdEtab() {
-        return this.idEtab;
-    }
-
-    public String getRaisonSociale() {
-        return this.raisonSociale;
-    }
-
-    public String getLibDepartement() {
-        return this.libDepartement;
-    }
-
-    public String getLibelleCategEtab() {
-        return this.libelleCategEtab;
     }
 
     public List<Commande> getCommandes() {
